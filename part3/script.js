@@ -86,14 +86,21 @@ movies[4] = "Breaking Bad";
 movies[5] = "Toy Story";
 movies[6] = "Ratatouille";
 window.console.log("Movies i like:");
+window.console.log(" ");
 for ( var i=0 ; i<movies.length; i+=1){
     window.console.log(movies[i]);
 }
 var leastFavMovies = ["Dilwale","Godzilla","Gentleman"];
+window.console.log(" ");
 window.console.log("Movies i regret watching:");
-var samp = leastFavMovies.splice(2,0,"<br>");
+window.console.log(" ");
 for ( var items = 0 ; items<leastFavMovies.length; items+=1){
-    window.console.log(samp[items]);
+    window.console.log(leastFavMovies[items]);
+    if(items == 1){
+        window.console.log(" ");
+        window.console.log(" ");
+        window.console.log(" ");
+    }
 }*/
 
 //Program 9
@@ -128,9 +135,9 @@ movies[3] = "Dark Knight";
 movies[4] = "Breaking Bad";
 movies[5] = "Toy Story";
 movies[6] = "Ratatouille";
-var samp = movies.length -1 ;
-window.console.log(movies[samp]);*/
-
+//var samp = movies.length -1 ;
+//window.console.log(movies[samp]);
+window.console.log(movies.pop());*/
 
 
 
