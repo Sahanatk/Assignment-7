@@ -6,7 +6,6 @@ function playgame(){
     var auto = Math.floor(Math.random() * 3) + 1  ;
     window.alert("I played my turn");
     choice = window.prompt("Enter your choice(rock,scissors or paper)");
-   // var auto1 =(Math.floor(Math.random())*10);
     document.write(auto);
     if(auto == 1) {
         autostr = "rock";
@@ -42,21 +41,22 @@ function playgame(){
         
     }
 }
+
 function main(){
     "use strict";
     alert("Welcome to the rock,paper,scissors game");
     playgame();
-  
 }
 
 function exit(){
-      var choice = "y";
+    var choice;
     choice = window.prompt("Do you want to continue the game (y/n)");
     if(choice == "y"){
-         playgame();
+        playgame();
     }
-    window.alert("Hope you really enjoyed it.Thanks for playing!!");
-   
+    else {
+        window.alert("Hope you really enjoyed it.Thanks for playing!!");
+    }
 }
 
 main();

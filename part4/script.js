@@ -2,8 +2,8 @@
 
 function main(){
     "use strict";
-    var command;
     displayMenu();
+    var command;
     var inventory =[
                     [1234,"Trousers",2,'$30.99'],
                     [4328,"Blanket",1,'$15.99'],
@@ -11,7 +11,7 @@ function main(){
                     [6851,"Jeans",4,'$20.99'],     
                     [8923,"T-shirts",6,'$30.99']
                     ];
-     for(;;) {
+    for(;;){
         command = window.prompt("Enter command");
         if (command !== null) {
             if (command === "show") {
@@ -35,8 +35,8 @@ function displayMenu(){
     window.console.log("Welcome to Product Inventory Management System");
     window.console.log("");
     window.console.log("COMMAND MENU");
-    window.console.log("show - view all products" + "<br>");
-    window.console.log("update - update an existing product" +"<br>");
+    window.console.log("show - view all products");
+    window.console.log("update - update an existing product");
     window.console.log("exit - exit the program");
     window.console.log("");
 }
@@ -53,7 +53,6 @@ function update(inventory){
     var skuno,quant;
     skuno = window.prompt("Enter a sku number to update the product");
     quant = window.prompt("Enter a new quantity");
-   // newProd = window.prompt("Enter a new product");
     inventory.forEach(function(item){
         if(skuno == item[0]){
            item[2]  = quant;
@@ -63,6 +62,7 @@ function update(inventory){
     window.console.log("Product " +skuno + " has been updated");
     window.console.log("");
 }
-main()
+
+main();
 
 
