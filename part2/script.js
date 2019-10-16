@@ -15,30 +15,31 @@ function playgame(){
     } else if(auto == 3) {
         autostr = "scissors";
     }
-   if(choice == "rock" && autostr == "paper"){
-            window.alert("computer wins!!");
-           exit();}
-        else if(choice == "paper" && autostr == "scissors"){
-            window.alert("computer wins!!");
-          exit();}
-        else if(choice == "rock" && autostr == "scissors"){
-            window.alert("user wins!!");
-           exit();}
-        else if(choice == "paper" && autostr == "rock"){
-            window.alert("user wins!!");
-            exit();}
-        else if(choice == "scissors" && autostr == "paper"){
-            window.alert("user wins!!");
-           exit();}
-        else if(choice == "scissors" && autostr == "rock"){
-            window.alert("computer wins!!");
-           exit();}
-        else if(choice == autostr){
-            window.alert("Its a draw");
-            exit();}
-        else {
-            window.alert("You can't enter other than the three options!/null values");
-           exit();
+                if(choice == "rock" && autostr == "paper"){
+                    window.alert("computer wins!!");
+                    exit();}
+                else if(choice == "paper" && autostr == "scissors"){
+                    window.alert("computer wins!!");
+                  exit();}
+                else if(choice == "rock" && autostr == "scissors"){
+                    window.alert("user wins!!");
+                   exit();}
+                else if(choice == "paper" && autostr == "rock"){
+                    window.alert("user wins!!");
+                    exit();}
+                else if(choice == "scissors" && autostr == "paper"){
+                    window.alert("user wins!!");
+                   exit();}
+                else if(choice == "scissors" && autostr == "rock"){
+                    window.alert("computer wins!!");
+                   exit();}
+                else if(choice == autostr){
+                    window.alert("Its a draw");
+                    exit();}
+                else {
+                    window.alert("You can't enter other than the three options!/null values");
+                   exit();
+        
     }
 }
 function main(){
@@ -55,6 +56,7 @@ function exit(){
          playgame();
     }
     window.alert("Hope you really enjoyed it.Thanks for playing!!");
+   
 }
 
 main();

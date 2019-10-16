@@ -43,22 +43,21 @@ findModulus(4,10);
 findModulus(15,10);*/
 
 //5.addition of prompted numbers
-/*var inp = window.prompt("Enter the numbers seperated by comma");
-var numArray = inp.split(",");
-for (var i = 0 ; i < numArray.length; i += 1) {
-    numArray[i] = +numArray[i];
-}
 
 function add(){
-    var sum = 0 ;
-    document.write("Inside function");
-    document.write(arguments[0])
-    for ( var i = 0 ; i < arguments.length; i += 1){
-       sum = sum + arguments[i];
+    var sum = 0
+    var numArray = arguments[0].split(",")
+    for ( var i = 0 ; i < numArray.length; i += 1){
+        numArray[i] = +numArray[i]
+    }
+    for (i = 0 ; i < numArray.length; i += 1){
+        sum = sum + numArray[i];
     }
     window.console.log("The sum of numbers is " +sum);
 }
-add(numArray);*/
+
+var inp = window.prompt("Enter the numbers seperated by comma");
+add(inp);
 
 
 

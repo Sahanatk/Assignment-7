@@ -3,14 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <title>Document</title>
-<script type="text/javascript" src="script.js" defer>
-
-
-</script>
+<!--<script type="text/javascript" src="script.js" defer>
+</script>-->
 </head>
 <body>
 <!--<button onclick="myMessage()">Click Me!!</button>-->
 <button id="myButton" type="button">click me</button>
-
+<script>
+document.getElementById("myButton").addEventListener("click", function(){ 
+    "use strict";
+    window.alert("I have been clicked");
+});
+</script>
 </body>
 </html>
